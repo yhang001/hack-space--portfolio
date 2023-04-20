@@ -2,35 +2,96 @@
 /*This is a comment in CSS*/
 
 body{
-    font-family:Garamond,Serif;
     font-weight:lighter;
+    font-family:Garamond,Serif;
     margin: 0;
 }
 
-h1{
-    font-size: 30px;
+header h1{
+    font-size: 35px;
+    margin:20px 0;
+}
+header h2{
+    font-size: 20px;
+    margin: 0px 0px 40px 0px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+main.documentation-page h3{
+    margin-top: 40px;
+}
+
+li{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
 }
 
 p{
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.6em;
+    margin: 2.5em 0;
+   font-family: Helvetica, sans-serif;
 }
 
+main,
 header{
-    padding:0 3%;
-}
-
-main{
     width:100%;
     max-width:1400px; /* means it won't be larger than 1200px on larger screens */
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 3%;
+    padding: 30px 3%;
+}
 
+header.documentation-header{
+    padding: 0 3%;
+}
+
+.documentation-header section,
+main.documentation-page section{
+    margin: 10px 10%;
 }
 
 footer{
     width:100%;
     min-height:100px;
+}
+
+nav{
+    padding:10px 3%;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color: grey;
+}
+
+.center-text{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+/* original aspect ratio width="640" height="360" */
+.responsive-video{
+    position: relative;
+    width: 100%; /* adjust this and the padding-top to change how big it is*/
+    height: 0;
+    padding-top: 57%; /* padding top is in reltation to the width of parent, it preserves aspect ratio*/
+    /* margin: 0 auto; */ /*this would center your video in the section container*/
+}
+.responsive-video iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -53,6 +114,14 @@ footer{
     padding: 5px;
 }
 
+.flex-basis-third .flex-item{
+    flex-basis: 33.33%; 
+}
+
+.flex-basis-half .flex-item{
+    flex-basis: 50%; 
+}
+
 .flex-item a{
     display: flex;
     width: 100%;
@@ -68,6 +137,7 @@ footer{
     color:#4f4f4f;
     transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
+
 
 /* want a different background image for each project? */
 /* try give each a tag a unique id in your HTML and then set different background images here*/
@@ -93,12 +163,12 @@ footer{
     background-image: url(../assets/images/5.jpg); 
 }
 
-.flex-item a#Make-or-Scrape{
-    background-image: url(../assets/images/6.jpg); 
+.flex-item a#Pull-and-Push{
+    background-image: url(../assets/images/8.jpg); 
 }
 
-.flex-item a#Data-Set-Two-Ways{
-    background-image: url(../assets/images/7.jpg); 
+.flex-item a#Approaches-to-Networked-Experiences{
+    background-image: url(../assets/images/9.jpg); 
 }
 
 
