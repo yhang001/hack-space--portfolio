@@ -127,7 +127,6 @@ img{
     width: 100%;
     height: 0;
     padding: 30% 0;
-    background-image: url(../assets/images/lightgrey-line.jpeg); /*change the image to one of you choice */
     background-position: center;
     background-size: 100%;
     justify-content: center;
@@ -171,6 +170,13 @@ img{
     background-image: url(../assets/images/9.jpg); 
 }
 
+.flex-item a#Final-project-documentation{
+    background-image: url(../assets/images/10.jpg); 
+}
+
+.flex-item a#Slicer{
+    background-image: url(../assets/images/11.jpg); 
+}
 
 
 .flex-item a:hover{
